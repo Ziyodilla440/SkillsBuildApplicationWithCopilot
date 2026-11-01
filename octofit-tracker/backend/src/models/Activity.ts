@@ -6,7 +6,7 @@ const activitySchema = new Schema({
   type: { type: String, required: true },
   minutes: { type: Number, required: true },
   points: { type: Number, required: true },
-  occurredAt: { type: Date, required: true, default: Date.now },
+  occurredAt: { type: Date, required: true },
 });
 
 export const Activity = model('Activity', activitySchema);
